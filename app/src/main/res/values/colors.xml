@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <!-- from EHR 1.1.X-->
+    <!-- primary colors-->
+    <!-- primary colors-->
+    <color name="primary_darker_color">#3c2c4f</color>
+    <color name="primary_dark_color">#523C6C</color>
+    <color name="primary_color">#79589F</color>
+    <color name="primary_light_color">#9379b2</color>
+    <color name="primary_lighter_color">#bcabcf</color>
+    <color name="primary_lightest_color">#e4ddeb</color>
+    <!-- accent colors-->
+    <color name="accent_color">#9F9E58</color>
+
+    <color name="text_color">#FFFFFF</color>
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#727272</color>
+
+    <color name="divider_color">#B6B6B6</color>
+
+</resources>

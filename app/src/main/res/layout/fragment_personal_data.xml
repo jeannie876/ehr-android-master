@@ -1,0 +1,314 @@
+<ScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="fragment_personal_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/easymed"/>
+
+        <LinearLayout
+            android:id="@+id/llTagNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tag_number"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/middle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/middle_name"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/native_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/native_name"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="18"
+                android:useDefaultMargins="true"
+                android:alignmentMode="alignBounds"
+                android:columnOrderPreserved="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="6"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/gender"/>
+
+                <Spinner
+                    android:id="@+id/sGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|fill_horizontal"
+                    android:layout_columnSpan="12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="6"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/status"/>
+
+                <Spinner
+                    android:id="@+id/sStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_columnSpan="12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="6"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/blood_type"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/sBloodType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_columnSpan="12"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="6"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/age"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_columnSpan="12"
+                    android:layout_gravity="fill_horizontal"
+                    android:weightSum="3">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|fill_horizontal"
+                        android:layout_weight="1">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/etYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="@string/years"
+                            android:selectAllOnFocus="true"
+                            android:imeOptions="actionNext"
+                            android:maxLines="1"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/etMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="@string/months"
+                            android:selectAllOnFocus="true"
+                            android:imeOptions="actionNext"
+                            android:text="0"
+                            android:maxLines="1"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/etWeek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="@string/weeks"
+                            android:selectAllOnFocus="true"
+                            android:imeOptions="actionNext"
+                            android:text="0"
+                            android:maxLines="1"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="6"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/birthday"/>
+
+                <TextView
+                    android:id="@+id/tvBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="10"
+                    android:paddingLeft="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical|fill_horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/click_to_select_date"/>
+
+                <ImageView
+                    android:id="@+id/ivRemoveBirthday"
+                    android:layout_columnSpan="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tvPhoneCode"
+                    android:layout_columnSpan="6"
+                    android:text="Phone\nCountry code"
+                    android:lines="2"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/sPhoneCode"
+                    android:layout_columnSpan="12"
+                    android:layout_gravity="fill|center_vertical"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    android:layout_columnSpan="6"
+                    android:text="@string/phone_number"
+                    android:layout_gravity="center_vertical"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_columnSpan="12"
+                    android:layout_gravity="center_vertical|fill">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:lines="3"
+                    android:imeOptions="actionNext"
+                    android:maxLines="6"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

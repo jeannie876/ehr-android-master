@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image_array">
+        <item>Take new picture</item>
+        <item>Select new picture</item>
+        <item>Remove picture</item>
+    </string-array>
+</resources>

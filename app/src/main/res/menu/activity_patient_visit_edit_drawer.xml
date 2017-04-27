@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/tcp">
+        <item
+            android:id="@+id/nav_personal_data"
+            android:title="@string/personal_data"/>
+
+        <item
+            android:id="@+id/nav_vital_signs"
+            android:title="@string/vital_signs"/>
+
+        <item
+            android:id="@+id/nav_cc"
+            android:title="@string/chief_complaints"/>
+
+        <item
+            android:id="@+id/nav_triage_remark"
+            android:title="@string/triage_remark"/>
+
+        <item
+            android:id="@+id/nav_hpi"
+            android:title="@string/hpi"/>
+
+        <item
+            android:id="@+id/nav_pmh"
+            android:title="@string/previous_medical_history"/>
+
+        <item
+            android:id="@+id/nav_fh"
+            android:title="@string/family_history"/>
+
+        <item
+            android:id="@+id/nav_sh"
+            android:title="@string/social_history"/>
+
+        <item
+            android:id="@+id/nav_dh"
+            android:title="@string/drug_history"/>
+
+        <item
+            android:id="@+id/nav_screening"
+            android:title="@string/screening"/>
+
+        <item
+            android:id="@+id/nav_allergy"
+            android:title="@string/allergy"/>
+
+        <item
+            android:id="@+id/nav_pregnancy"
+            android:title="@string/pregnancy"/>
+
+        <item
+            android:id="@+id/nav_ros"
+            android:title="@string/review_of_system"/>
+
+        <item
+            android:id="@+id/nav_rf"
+            android:title="@string/red_flag"/>
+
+        <item
+            android:id="@+id/nav_pe"
+            android:title="@string/physical_examination"/>
+
+        <item
+            android:id="@+id/nav_cd"
+            android:title="@string/clinical_diagnosis"/>
+
+        <item
+            android:id="@+id/nav_investigation"
+            android:title="@string/investigation"/>
+
+        <item
+            android:id="@+id/nav_medication"
+            android:title="@string/medication"/>
+
+        <item
+            android:id="@+id/nav_advice"
+            android:title="@string/advice"/>
+
+        <item
+            android:id="@+id/nav_fu"
+            android:title="@string/follow_up"/>
+
+        <item
+            android:id="@+id/nav_consultation_remark"
+            android:title="@string/consultation_remark"/>
+
+
+    </group>
+
+</menu>

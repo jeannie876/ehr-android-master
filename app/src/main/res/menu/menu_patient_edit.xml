@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/chief_complaint"
+        android:orderInCategory="100"
+        android:title="@string/chief_complain_short_form"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/history"
+        android:orderInCategory="200"
+        android:title="@string/history"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/confirm"
+        android:orderInCategory="300"
+        app:showAsAction="always"
+        android:title="@string/confirm"/>
+</menu>

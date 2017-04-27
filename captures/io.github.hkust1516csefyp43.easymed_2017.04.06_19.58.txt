@@ -1,0 +1,43 @@
+Applications Memory Usage (kB):
+Uptime: 26796492 Realtime: 40439462
+
+** MEMINFO in pid 12613 [io.github.hkust1516csefyp43.easymed] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     5258     5232        0        0     8176     8013      162
+  Dalvik Heap    12533    12336        0        0    27795    23526     4269
+ Dalvik Other    13088    12996        0        0                           
+        Stack      720      720        0        0                           
+      Gfx dev     1508     1508        0        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     1772      324      780        0                           
+    .apk mmap     1336        0      900        0                           
+    .ttf mmap      115        0      104        0                           
+    .dex mmap       80        0       76        0                           
+    .oat mmap     2933        0     1548        0                           
+    .art mmap     1649      840      260        0                           
+   Other mmap       67        4        8        0                           
+   EGL mtrack    38976    38976        0        0                           
+    GL mtrack     4876     4876        0        0                           
+      Unknown      550      544        0        0                           
+        TOTAL    85465    78356     3680        0    35971    31539     4431
+ 
+ Objects
+               Views:      243         ViewRootImpl:        1
+         AppContexts:        3           Activities:        1
+              Assets:        9        AssetManagers:        9
+       Local Binders:        9        Proxy Binders:       14
+       Parcel memory:        2         Parcel count:       10
+    Death Recipients:        0      OpenSSL Sockets:       16
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 
+ 
+ Asset Allocations
+    : 1K
+    zip:/data/app/io.github.hkust1516csefyp43.easymed-1/base.apk:/assets/fonts/communitymaterial-font-v1.5.54.ttf: 217K
+    zip:/data/app/io.github.hkust1516csefyp43.easymed-1/base.apk:/assets/fonts/fontawesome-font-v4.6.0.1.ttf: 147K
+    zip:/data/app/io.github.hkust1516csefyp43.easymed-1/base.apk:/assets/fonts/google-material-font-v2.2.0.1.original.ttf: 125K

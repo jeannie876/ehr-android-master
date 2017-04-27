@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rlPrescription"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical">
+
+    <View
+        android:id="@+id/vStockCircle"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/stock_enough"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/accbPrescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:id="@+id/llPrescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medication"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvPrescriptionDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Prescription detail"/>
+
+    </LinearLayout>
+
+</LinearLayout>

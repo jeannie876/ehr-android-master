@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release version="2.0.7" versioncode="38">
+        <change>FIX: Show your name instead of 'Louis Tsai'</change>
+    </release>
+    <release version="2.0.6" versioncode="37">
+        <change>Minor bug fix</change>
+    </release>
+    <release version="2.0.5" versioncode="36">
+        <change>ADD: Ability to change system clock</change>
+    </release>
+    <release version="2.0.4" versioncode="35">
+        <change>FIX: Replace EENT with General and Other</change>
+        <change>ADD: Warning for temperature, blood sugar and blood pressure</change>
+        <change>ADD: Interface for Sign up</change>
+        <change>FIX: No more SIGH UP</change>
+        <change>ADD: Medication description input shortcut</change>
+        <change>FIX: Sort by tag number if possible</change>
+        <change>FIX: Minor bug fixes</change>
+        <change>FIX: minor UI changes</change>
+    </release>
+    <release version="2.0.3" versioncode="34">
+        <chagen>FIX: save document</chagen>
+        <change>FIX: display of everything while editing patient</change>
+        <change>Minor bug fixes</change>
+    </release>
+    <release version="2.0.2" versioncode="33">
+        <change>FIX: Prescribe medication even if it is not in the database</change>
+        <change>FIX: display previously enter data</change>
+        <change>FIX: Must select clinic before login</change>
+    </release>
+    <release version="2.0.1" versioncode="32">
+        <change>Gender fixed</change>
+        <change>Inventory fixed</change>
+    </release>
+    <release version="2.0.0" versioncode="31">
+        <change>First stable release!</change>
+        <change>Minor bug fixes (dah!)</change>
+    </release>
+    <release version="1.3.1" versioncode="30">
+        <change>ADD: Shut down server</change>
+        <change>ADD: Server status report</change>
+        <change>ADD: Add inventory item</change>
+        <change>FIX: Chart in Reports now display correct month</change>
+        <change>Minor bug fixes</change>
+    </release>
+    <release version="1.3.0" versioncode="29">
+        <change>FIX: Synchronization</change>
+        <change>FIX: Login</change>
+        <change>Minor bug fixes</change>
+    </release>
+    <release version="1.2.7" versioncode="28">
+        <change>ADD: display static data in Admin page</change>
+        <change>ADD: display basic analytic in Report page</change>
+        <change>ADD: message when the patient list is actually empty, not error or anything else</change>
+        <change>ADD: basic interface in edit profile picture</change>
+    </release>
+    <release version="1.2.6" versioncode="27" >
+        <change>Change log added</change>
+        <change>Temperature and Weight conversion</change>
+        <change>Details of each inventory item is being display</change>
+        <change>Bug fix: timezone difference knock patients to yesterday/tomorrow's list</change>
+    </release>
+    <release
+        version="1.1.4"
+        versioncode="15">
+        <change>Tag number added</change>
+        <change>Add new triage record for new patient works</change>
+        <change>Add new triage record for existing patient works</change>
+        <change>Now display correct clinic name</change>
+        <change>Notifications</change>
+        <change>Pharmacy now visible</change>
+        <change>Minor bug fixes everywhere</change>
+    </release>
+    <release
+        version="1.1.3"
+        versioncode="14">
+        <change>
+            Auto fill keywords from database
+        </change>
+    </release>
+    <release
+        version="1.1.2"
+        versioncode="13">
+        <change>Search is coming</change>
+    </release>
+    <release
+        version="1.1.1"
+        versioncode="12">
+        <change>Bug fixes</change>
+        <change>Update everything to v2 API</change>
+    </release>
+    <release
+        version="1.1.0"
+        versioncode="11">
+        <change>Blood type and Clinics in Admin now have some content</change>
+        <change>Pull to refresh is coming back, kind of</change>
+        <change>Only display 4 pages in Triage, and all in Consultation</change>
+    </release>
+    <release
+        version="1.0.10"
+        versioncode="10">
+        <change>Another new logo</change>
+        <change>You can now click card to edit them</change>
+        <change>"Press back twice to exit" for login page</change>
+        <change>Preparing switch to v2 API</change>
+        <change></change>
+    </release>
+    <release
+        version="1.0.9"
+        versioncode="9">
+        <change>Added a lot more panels</change>
+        <change>New logo</change>
+        <change>More persistent data (i.e. rotate screen won't always destroy data)</change>
+        <change>Auto BMI calculation</change>
+    </release>
+    <release
+        version="1.0.8"
+        versioncode="8">
+        <change>Fixed Leak Canary never goes away bug</change>
+        <change>Added network checking during start up screen (Warning if no network access)</change>
+        <change>Added UI for free(public) version initial setup</change>
+        <change>Change logo</change>
+    </release>
+    <release
+        version="1.0.7"
+        versioncode="7">
+        <change>Minor bug fixes here and there</change>
+    </release>
+    <release
+        version="1.0.6"
+        versioncode="6">
+        <change>ADD: Change log dialog after update</change>
+        <change>A dialog to let user select what kind of new patient record to add</change>
+        <change>Replace text buttons with icons in HPI Fragment</change>
+        <change>Testing the rich text editor (Try tap the redo button!)</change>
+        <change>UI update to Remark Fragment</change>
+        <change>Minor UI fixes everywhere</change>
+    </release>
+    <release
+        version="1.0.5"
+        versioncode="5">
+        <change>More UI added in patient visit i.e. more input boxes everywhere</change>
+        <change>Working on taking new profile picture for patients</change>
+        <change>Fix opening screen, logo is now the correct one</change>
+        <change>Jump between input boxes in vital signs will show the correct keyboard</change>
+        <change>Fix color for patients with no profile picture</change>
+        <change>Date pickers for dates</change>
+    </release>
+    <release
+        version="1.0.4"
+        versioncode="4">
+        <change>Minor bug fix here and there</change>
+    </release>
+    <release
+        version="1.0.3"
+        versioncode="3">
+        <change>First private release</change>
+        <change>blah blah blah</change>
+    </release>
+    <release
+        version="1.0.2"
+        versioncode="2">
+        <change>First internal release</change>
+    </release>
+    <release
+        version="1.0.1"
+        versioncode="1">
+        <change>Testing Release</change>
+    </release>
+</changelog>

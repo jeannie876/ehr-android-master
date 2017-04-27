@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="io.github.hkust1516csefyp43.easymed.view.activity.SyncActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bPullFromCloud"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:text="@string/before_leaving_office"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvPullFromCloud"
+            android:layout_width="wrap_content"
+            android:text="timestamp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/bPushToLocal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:text="@string/before_starting_mobile_clinic"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvPushToLocal"
+            android:layout_width="wrap_content"
+            android:text="timestamp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/bPullFromLocal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:text="@string/before_leaving_mobile_clinic"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvPullFromLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="timestamp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/bPushToCloud"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:text="@string/after_back_to_office"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvPushToCloud"
+            android:layout_width="wrap_content"
+            android:text="timestamp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
